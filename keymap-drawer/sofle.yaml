@@ -1,6 +1,6 @@
 layout: {qmk_keyboard: sofle/rev1}
 layers:
-  LAYER0:
+  default:
   - {t: '`', s: '~'}
   - {t: '1', s: '!'}
   - {t: '2', s: '@'}
@@ -13,7 +13,7 @@ layers:
   - {t: '8', s: '*'}
   - {t: '9', s: (}
   - {t: '0', s: )}
-  - {t: '-', s: _}
+  - $$mdi:backspace-reverse-outline$$
   - $$mdi:keyboard-tab$$
   - Q
   - W
@@ -57,11 +57,11 @@ layers:
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-command$$
-  - {t: '$$mdi:backspace$$', type: backspace}
-  - $$mdi:backspace-reverse-outline$$
-  - {t: '$$mdi:keyboard-return$$', type: enter}
-  - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:keyboard-space$$
+  - '2'
+  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - {t: '$$mdi:keyboard-return$$', type: enter}
   - layer1
   - RIGHT GUI
   - $$mdi:apple-keyboard-control$$
@@ -78,28 +78,28 @@ layers:
   - F8
   - F9
   - F10
-  - +
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '`', s: '~'}
-  - $$mdi:mouse-left-click-outline$$
-  - $$mdi:mouse-scroll-wheel$$
-  - $$mdi:mouse-right-click-outline$$
-  - '&mkp MB4'
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
-  - PG UP
-  - END
+  - {t: '$$mdi:transfer$$', type: trans}
+  - '&ctrl_a'
   - $$mdi:arrow-up-bold$$
-  - HOME
+  - '&ctrl_e'
   - {t: '-', s: _}
   - {t: '=', s: +}
   - {type: held}
-  - '~'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - '&mkp MB5'
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
-  - PG DN
+  - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-right-bold$$
@@ -114,15 +114,15 @@ layers:
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
   - RGB BRI
   - RGB BRD
-  - Ins
+  - {t: '$$mdi:transfer$$', type: trans}
   - F11
   - F12
-  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:apple-keyboard-caps$$
   - $$mdi:volume-off$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:backspace$$', type: backspace}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:transfer$$', type: trans}
@@ -188,7 +188,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
   - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
