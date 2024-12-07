@@ -71,11 +71,11 @@
 
         layer_1 {
             bindings = <
-&kp ESCAPE  &kp EXCLAMATION  &kp AT_SIGN  &kp HASH  &kp DOLLAR  &kp PERCENT    &mmv MOVE_UP     &kp CARET      &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
-&trans      &trans           &trans       &trans    &trans      &trans         &mmv MOVE_DOWN   &kp PAGE_UP    &ctrl_a        &kp UP        &ctrl_e               &kp MINUS              &kp PLUS
-&trans      &trans           &trans       &trans    &trans      &trans         &mmv MOVE_LEFT   &kp PAGE_DOWN  &kp LEFT       &kp DOWN      &kp RIGHT             &kp LEFT_BRACKET       &kp RIGHT_BRACKET
-&trans      &trans           &trans       &trans    &trans      &trans         &mmv MOVE_RIGHT  &trans         &trans         &trans        &trans                &trans                 &kp F12
-&kp C_MUTE  &trans           &trans       &trans    &trans      &trans         &mkp LCLK        &trans         &trans         &trans        &trans                &trans
+&kp ESCAPE  &kp EXCLAMATION  &kp AT_SIGN  &kp HASH  &kp DOLLAR  &kp PERCENT    &mmv MOVE_UP     &kp CARET      &kp AMPERSAND   &kp ASTERISK    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp KP_EQUAL
+&trans      &trans           &trans       &trans    &trans      &trans         &mmv MOVE_DOWN   &kp PAGE_UP    &ctrl_a         &kp UP          &ctrl_e               &kp MINUS              &kp PLUS
+&trans      &trans           &trans       &trans    &trans      &trans         &mmv MOVE_LEFT   &kp PAGE_DOWN  &kp LEFT        &kp DOWN        &kp RIGHT             &kp LEFT_BRACKET       &kp RIGHT_BRACKET
+&trans      &trans           &trans       &trans    &trans      &trans         &mmv MOVE_RIGHT  &trans         &kp UNDERSCORE  &kp LEFT_BRACE  &kp RIGHT_BRACE       &trans                 &trans
+&kp C_MUTE  &trans           &trans       &trans    &trans      &trans         &mkp LCLK        &trans         &trans          &trans          &trans                &trans
             >;
 
             display-name = "layer1";
@@ -84,11 +84,11 @@
 
         layer_2 {
             bindings = <
-&trans  &kp F1           &kp F2           &bt BT_SEL 2     &bt BT_SEL 3     &bt BT_SEL 4    &mmv MOVE_UP     &trans  &trans           &trans           &trans           &trans           &trans
-&trans  &trans           &trans           &trans           &rgb_ug RGB_TOG  &trans          &mmv MOVE_DOWN   &trans  &trans           &trans           &trans           &trans           &trans
-&trans  &trans           &trans           &trans           &trans           &trans          &mmv MOVE_LEFT   &trans  &trans           &trans           &trans           &trans           &trans
-&trans  &trans           &trans           &bt BT_CLR_ALL   &trans           &bootloader     &mmv MOVE_RIGHT  &trans  &trans           &rgb_ug RGB_SPD  &rgb_ug RGB_SPI  &bootloader      &trans
-&trans  &rgb_ug RGB_BRI  &rgb_ug RGB_EFR  &rgb_ug RGB_EFF  &rgb_ug RGB_BRD  &trans          &mkp LCLK        &trans  &rgb_ug RGB_SAI  &rgb_ug RGB_HUI  &rgb_ug RGB_HUD  &rgb_ug RGB_SAD
+&trans  &kp F1           &kp F2           &kp F3           &kp F4           &kp F5         &mmv MOVE_UP     &kp F6  &kp F7           &kp F8           &kp F9           &kp F10          &kp F11
+&trans  &trans           &trans           &trans           &rgb_ug RGB_TOG  &trans         &mmv MOVE_DOWN   &trans  &trans           &trans           &trans           &kp C_PLAY       &trans
+&trans  &trans           &trans           &trans           &trans           &trans         &mmv MOVE_LEFT   &trans  &kp C_PREV       &trans           &kp C_NEXT       &trans           &trans
+&trans  &trans           &trans           &bt BT_CLR_ALL   &trans           &bootloader    &mmv MOVE_RIGHT  &trans  &trans           &rgb_ug RGB_SPD  &rgb_ug RGB_SPI  &trans           &kp F12
+&trans  &rgb_ug RGB_BRI  &rgb_ug RGB_EFR  &rgb_ug RGB_EFF  &rgb_ug RGB_BRD  &trans         &mkp LCLK        &trans  &rgb_ug RGB_SAI  &rgb_ug RGB_HUI  &rgb_ug RGB_HUD  &rgb_ug RGB_SAD
             >;
 
             sensor-bindings = <&scroll_encoder>;
